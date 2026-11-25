@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendy Rojas Moreno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="#">Festival Mexicano</a>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#entradas">Entradas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Festival de Música Mexicana</h1>
+            <p>Celebrando a las leyendas de la música mexicana</p>
+            <a class="btn" href="#artistas">Conoce a los artistas</a>
+        </div>
+    </section>
+
+    <section class="section" id="artistas">
+        <h2>Artistas Destacados</h2>
+
+        <div class="cards">
+
+            <article class="card">
+                <img src="img/artista1.jpg" alt="Vicente Fernández">
+                <h3>Vicente Fernández</h3>
+                <p>
+                    Cantante mexicano conocido como el rey de la música ranchera.
+                    Interpretó canciones como El Rey, Volver, Volver
+                    y Por Tu Maldito Amor.
+                </p>
+            </article>
+
+            <article class="card">
+                <img src="img/artista2.jpeg" alt="Antonio Aguilar">
+                <h3>Joan Sebastian</h3>
+                <p>
+                    Cantante y actor mexicano reconocido por sus canciones
+                    rancheras y por promover la música tradicional mexicana.
+                </p>
+            </article>
+
+            <article class="card">
+                <img src="img/artista 3.jpg" alt="Joan Sebastian">
+                <h3>Jose Jose</h3>
+                <p>
+                    Cantautor mexicano conocido como El Poeta del Pueblo.
+                    Destacó con canciones como Tatuajes y Secreto de Amor.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="section tickets" id="entradas">
+        <h2>Tipos de Entradas</h2>
+
+        <div class="ticket-grid">
+
+            <article class="ticket">
+                <h3>Entrada General</h3>
+                <p class="price">$50</p>
+                <p>Acceso general al festival</p>
+                <a class="buy" href="#contacto">Comprar</a>
+            </article>
+
+            <article class="ticket featured">
+                <h3>Entrada VIP</h3>
+                <p class="price">$100</p>
+                <p>Acceso preferencial y zona VIP</p>
+                <a class="buy" href="#contacto">Comprar</a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="section" id="contacto">
+        <h2>Registro al Festival</h2>
+
+        <form class="formulario" action="https://formspree.io/f/mqpedokk" method="POST">
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo"
+            placeholder="Escribe tu correo" required>
+
+            <label for="entrada">Selecciona tu entrada:</label>
+            <select id="entrada" name="entrada" required>
+                <option value="">Selecciona una opción</option>
+                <option value="general">Entrada General - $50</option>
+                <option value="vip">Entrada VIP - $100</option>
+            </select>
+
+            <div class="checkbox">
+                <input type="checkbox" id="aceptar" name="aceptar" required>
+                <label for="aceptar">Acepto registrarme en el festival</label>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>Festival de Música Mexicana</p>
+        <p>Celebrando nuestras raíces y tradiciones</p>
+        <p>Contacto: festivalmexicano@gmail.com</p>
+    </footer>
+
+</body>
+</html>
